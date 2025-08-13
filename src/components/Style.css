@@ -1,0 +1,242 @@
+/*............signup and login.......*/
+
+    .signup-wrapper
+
+{
+      width: 100%;
+      height: 100vh;
+      background-color: #FFF5F2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.signup-box
+{
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.signup-left
+{
+    width: 50%;
+    background-color: #FFF9BD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-left-heading
+{
+color: white;
+font-size: 28px;
+
+}
+.signup-left-para
+{
+color: orange;
+font-size: 15px;
+
+}
+
+.signup-right
+{
+    width: 50%;
+    padding: 10px;
+}
+.form
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form input
+{
+    padding: 10px;
+   border: 1px solid #F3E9DC;
+   border-radius: 0px;
+   width: 80%;
+   font-size: 15px;
+   height: 45px;
+}
+.form button
+{
+    background-color: #799EFF;
+    padding: 10px;
+    color: white;
+    width: 80%;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.your-logo
+{
+height: 100px;
+
+}
+.link
+{
+    color: aqua;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.dashboard-main-container
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #FFAD60, #D8B4F8, rgb(219, 218, 218));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dashboard-container
+{
+    width: 95%;
+    height: 95vh;
+    background-color: #D8B4F8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-container
+{
+   width: 20%;
+   height: 95vh;
+   background-color: aqua;
+   padding: 10px;
+
+
+}
+.main-container
+{
+     width: 80%;
+   height: 95vh;
+   background-color: rgb(226, 245, 233);
+
+}
+.top-bar
+{
+    height: 80px;
+    width: 100%;
+    background-color: #072541;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 15px;
+}
+.logo-container
+{
+    width: 50x;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-logo
+{
+    width: 60px;
+    height: 60px;
+}
+.profile-controler
+{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+.profile-name
+{
+    font-size: 18px;
+}
+.logout-btn
+{
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.brand-container
+{
+    height: 100px;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+   
+}
+.brand-name
+{
+    color: white;
+    font-size: 18px;
+
+}
+.brand-bar
+{
+    font-size: 12px;
+    color: #FFF9BD;
+    position: relative;
+    top: -10px;
+}
+.menu-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-link
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 85%;
+    border-radius: 5px;
+}
+.menu-active-link
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 85%;
+    border-radius: 5px;
+     background-color: #3C486B;
+}
+
+.menu-link:hover
+{
+    background-color: #3C486B;
+    transition: 0.5s;
+}
+.fa-solid
+{
+    margin-right: 10px !important;
+
+}
+.contract-us
+{
+position: absolute;
+bottom: 5vh;
+color: rgb(238, 239, 204);
+}
+
+
+.outlet-area
+{
+  padding: 10px;  
+}
