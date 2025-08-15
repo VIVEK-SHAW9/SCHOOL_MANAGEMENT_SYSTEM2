@@ -17,8 +17,8 @@ const Sidenavber = () => {
     </div>
     <div className='menu-container'>
         <Link to='/dashboard/home' className={location.pathname === '/dashboard/home'?'menu-active-link':'menu-link'}><i className="fa-solid fa-regular fa-house"></i> Home</Link>
-        <Link  to='/dashboard/cources'className={location.pathname === '/dashboard/cources'?'menu-active-link':'menu-link'}><i className="fa-solid fa-book"></i>All Course</Link> 
-        <Link to='/dashboard/add-cources' className={location.pathname === '/dashboard/add-cources'?'menu-active-link':'menu-link'}><i className="fa-solid fa-plus"></i>ADD Course</Link>
+        <Link  to='/dashboard/courses'className={location.pathname === '/dashboard/cources'?'menu-active-link':'menu-link'}><i className="fa-solid fa-book"></i>All Course</Link> 
+        <Link to='/dashboard/add-courses' className={location.pathname === '/dashboard/add-cources'?'menu-active-link':'menu-link'}><i className="fa-solid fa-plus"></i>ADD Course</Link>
         <Link to='/dashboard/student' className={location.pathname === '/dashboard/student'?'menu-active-link':'menu-link'}><i className="fa-solid fa-user-plus"></i>All Student</Link> 
         <Link to='/dashboard/add-student' className={location.pathname === '/dashboard/add-student'?'menu-active-link':'menu-link'}><i className="fa-solid fa-users"></i>Add Student</Link>
         <Link to='/dashboard/collect-fee' className={location.pathname === '/dashboard/collect-fee'?'menu-active-link':'menu-link'}><i className="fa-solid fa-money-bill"></i>Collect Fee</Link>

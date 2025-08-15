@@ -112,7 +112,7 @@ height: 100px;
 {
    width: 20%;
    height: 95vh;
-   background-color: aqua;
+   background-color: rgb(103, 130, 30);
    padding: 10px;
 
 
@@ -239,4 +239,60 @@ color: rgb(238, 239, 204);
 .outlet-area
 {
   padding: 10px;  
+}
+
+.course.signup-box
+{
+width: 30%;
+height: 20vh;
+background-color: #799EFF;
+}
+
+.course-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2px;
+  background-color: #f4f6f8;
+  min-height: 10vh;
+}
+
+.course-box {
+  background: rgb(192, 222, 202);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.course-box h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course-box p {
+  margin: 6px 0;
+  color: #0d1012;
+}
+
+.course-box img {
+  margin-top: 10px;
+  border-radius: 6px;
+  max-width: 30%;
+  height: 10vh;
+}
+.delete-course
+{
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: red;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -9,7 +9,6 @@ const AddCourses = () => {
   const [startingDate, setStartingDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [image, setImage] = useState(null);
-
   const [imageUrl, setImageUrl] = useState('');
   const [isLoading, setLoading] = useState(false);
 
@@ -19,27 +18,36 @@ const AddCourses = () => {
     e.preventDefault();
     setLoading(true);
 
-    console.log({ courseName, fees, Description, startingDate, endDate, image });
 
-    const formData = new FormData();
-    formData.append('courseName', courseName);
-    formData.append('description', Description);
-    formData.append('fees', fees);
-    formData.append('startingDate', startingDate);
-    formData.append('endDate', endDate);
-    formData.append('image', image);
+    const newCourse = {
+      _id: Date.now(),
+      name: courseName,
+      description: Description,
+      fees,
+      startingDate,
+      endDate,
+      image: imageUrl
+    };
 
-    // Simulate API call
+
+    const storedCourses = JSON.parse(localStorage.getItem('courses') || '[]');
+
+
+    storedCourses.push(newCourse);
+
+    localStorage.setItem('courses', JSON.stringify(storedCourses));
+
     setTimeout(() => {
       setLoading(false);
-      toast.success('New course added (mock data) ✅');
+      toast.success('New course added ');
       navigate('/dashboard/courses');
     }, 1000);
   };
 
-  const fileHandler = (e) => { 
-    setImage(e.target.files[0]);
-    setImageUrl(URL.createObjectURL(e.target.files[0]));
+  const fileHandler = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+    setImageUrl(URL.createObjectURL(file));
   };
 
   return (
@@ -60,6 +68,6 @@ const AddCourses = () => {
       </form>
     </div>
   );
-}
+};
 
 export default AddCourses;
